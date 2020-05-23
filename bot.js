@@ -26,10 +26,41 @@ client.on('ready', () => {
  client.user.setActivity("and pirating anime.", {type: "WATCHING"})
  const chanel = client.channels.cache.get('691793782466674721');
  const chanell = client.channels.cache.get('713048489633906768');
- chanel.send("sono confused");
+ chanel.send("");
 
 });
 
+client.on('error', () => {
+  const chanel = client.channels.cache.get('691793782466674721');
+  const chanell = client.channels.cache.get('713048489633906768');
+  chanel.send('Bravo Six, Going Dark');
+});
+
+client.on('message', async message => {
+  if(message.content.slice(0,12) === 'yummy yummy' && message.author.id != '697823658680385557'){
+    if(!(message.member.voice.channel)){
+      message.reply('IN MY TEEEEEEEELOPHASE');
+      return;
+    }
+    const connection = await message.member.voice.channel.join();
+    const teelophase = connection.play('/home/drsmalls42/teelophase.mp3');
+    if(message.member.voice.channel){
+
+      teelophase.pause();
+      teelophase.resume();
+
+      teelophase.setVolume(2); // half the volume
+
+      teelophase.on('finish', () => {
+        console.log('Finished playing!');
+        message.member.voice.channel.leave()
+      });
+    }
+    else {
+      message.reply('IN MY TEEEEEEEELOPHASE');
+    }
+  }
+});
 client.on('message', msg => {
 var mention1 = msg.mentions.members.first()
 if((msg.channel.id === '692003736192680027') && (msg.author.id != '539505577286434816') && (msg.author.id != '587138869947007007') && (msg.author.id != '282924172139560961') && (msg.author.id != '697823658680385557') && (msg.author.id != '697569067241832652')){
@@ -56,6 +87,8 @@ if((msg.channel.id === '697458067285082142') && (msg.author.id != '6975690672418
 }
 else {
   if((msg.author.id === '471499670871343125') && (msg.channel.id != '713048489633906768')){
+    const chanel = client.channels.cache.get('691793782466674721');
+    const chanell = client.channels.cache.get('713048489633906768');
     chanell.send("Mehi said '" + msg.content + "' in channel #" + msg.channel.id + ".")
   }
   if(msg.content.slice(0,7) === 'e.help' && msg.author.id != '697823658680385557'){
@@ -107,10 +140,6 @@ else {
     ⋗  Secret command - You won't find it.\
     ")
   }
-  if(msg.author.id === '282924172139560961'){
-    msg.react(`:4:`)
-    msg.react(`:4:`)
-  }
   if(msg.content.slice(0,4) === 'e.乒' && msg.author.id != '697823658680385557'){
     msg.channel.send("乓");
   }
@@ -154,9 +183,6 @@ if(msg.mentions.members.first()){
   }
   if(msg.content.slice(0,20) === 'WHAT A ***SCAAAM***' && msg.author.id != '697823658680385557'){
     msg.channel.send("***BECHNOTLAAAAAAADEE***");
-  }
-  if(msg.content.slice(0,12) === 'yummy yummy' && msg.author.id != '697823658680385557'){
-    msg.channel.send("In my TEEEEEEELOPHASE");
   }
   if(msg.content.slice(0,10) === 'yare yare' && msg.author.id != '697823658680385557'){
     msg.channel.send("In my CRANIALPHASE");
@@ -279,9 +305,7 @@ if(msg.mentions.members.first()){
   if(msg.content.slice(0,7) === 'e.ding' && msg.author.id != '697823658680385557'){
     msg.channel.send("Shigeo! There's a new customer!")
   }
-
 }
-
 });
 
 client.login(Auth.token);
