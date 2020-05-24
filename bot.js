@@ -115,7 +115,7 @@ else {
 
                 )
                 .setTimestamp()
-                .setFooter('Moonayy Bot Help Page', "https://i.imgur.com/QnEiNEc.png");
+                .setFooter('Ekubot Help Page', "https://i.imgur.com/kIHkG47.jpg");
             msg.channel.send(helpEmbed);
     msg.channel.send("\
     `Ekubo's Special Spirit Command Guide`\n\
