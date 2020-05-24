@@ -2,10 +2,9 @@
 
 A *nearly* pointless Discord Bot.
 
-To run you need:
+Required dependencies:
 
-An auth.json file with a token value from your bot
-
-node_modules "discord.js" module
+- An auth.js file with a token
+- The discord.js node module
 
 Made by Mob
