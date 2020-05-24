@@ -1,5 +1,5 @@
 {
-  "name": "Ekubot",
+  "name": "ekubot",
   "version": "1.2",
   "description": "It's a bot for guidance, and it has dimples! ",
   "main": "bot.js",
