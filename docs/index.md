@@ -1,4 +1,4 @@
-# A bot to truly make your Discord experience ever so slightly less pleasing.
+## A Bot To Truly Make Your Discord Experience Ever So Slightly Less Pleasing.
 
 This bot takes all of the fun out of existing and using Discord, at the highest efficiency ever recorded.
 
