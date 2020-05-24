@@ -102,43 +102,29 @@ else {
                 .setDescription("I am this server's spirit guide. My prefix is `e.`")
                 .setThumbnail('https://i.imgur.com/e5ykeq5.jpg')
                 .addFields(
+                    {name: `\n${config.prefix}commands`, value: `\`Usage: ${config.prefix}commands\`\nBrings up this menu.\n\n`},
+                    {name: `${config.prefix}help`, value: `\`Usage: ${config.prefix}help\`\nYou won't get it.\n\n`},
+                    {name: `${config.prefix}乒, 乒, ${config.prefix}ping, ping`, value: `\`Usage: ${config.prefix}乒\`\n乓\n\n`},
+                    {name: `${config.prefix}ding`, value: `\`Usage: ${config.prefix}ding\`\nStop opening the door to the Spirits & Such Consultation office if you aren't giving us business.\n\n`},
+                    {name: `yummy yummy`, value: `\`Usage: yummy yummy\`\nTasty.\n`},
+                    {name: `telo telo`, value: `\`Usage: telo telo\`\nTasty.\n`},
+                    {name: `yare yare`, value: `\`Usage: yare yare\`\nsmh\n`},
+                    {name: `${config.prefix}atomize`, value: `\`Usage: ${config.prefix}atomize @Mehi\`\nHave fun splitting apart your friends on an atomic level, atomizing ability courtesy of <@282924172139560961>.\n`},
                     {name: '\u200B', value: '\u200B'},
-                    {name: `${config.prefix}commands`, value: `\`Usage: ${config.prefix}commands\`\nBrings up this menu.`},
-                    {name: '\u200B', value: '\u200B'},
-                    {name: `${config.prefix}help`, value: `\`Usage: ${config.prefix}help\`\nYou won't get it.`},
-                    {name: '\u200B', value: '\u200B'},
-                    {name: `${config.prefix}乒, 乒, ${config.prefix}ping, ping`, value: `\`Usage: ${config.prefix}乒\`\n乓`},
-                    {name: '\u200B', value: '\u200B'},
-                    {name: `${config.prefix}ding`, value: `\`Usage: ${config.prefix}ding\`\nStop opening the door to the Spirits & Such Consultation office if you aren't giving us business.`},
-                    {name: '\u200B', value: '\u200B'},
-                    {name: `${config.prefix}commands`, value: `\`Usage: ${config.prefix}commands\`\nBrings up this menu.`},
+                    {name: '`Insulting Ekubo`', value: `Commands intended for insulting Ekubo.`},
+                    {name: `${config.prefix}`, value: `\`Usage: ${config.prefix}\`\nStop wasting time.\n\n`},
+                    {name: `${config.prefix}zawarudo`, value: `\`Usage: ${config.prefix}zawarudo\`\nThis isn't JoJo part 3.\n\n`},
+                    {name: `r!play muffin`, value: `\`Usage: r!play muffin\`\nWe don't need to hear it again.\n\n`},
+                    {name: `${config.prefix}possession`, value: `\`Usage: ${config.prefix}possession\`\nYou are beneath him.\n\n`},
+                    {name: `${config.prefix}turn`, value: `\`Usage: ${config.prefix}turn\`\nhow dare\n\n`},
+                    {name: `${config.prefix}lol`, value: `\`Usage: ${config.prefix}lol\`\nBring up a dark chapter of the past.\n\n`},
+                    {name: `${config.prefix}tree`, value: `\`Usage: ${config.prefix}tree\`\nBring up a dark chapter of the past.\n\n`},
 
                 )
                 .setTimestamp()
                 .setFooter('Ekubot Help Page', "https://i.imgur.com/kIHkG47.jpg");
             msg.channel.send(helpEmbed);
-    msg.channel.send("\
-    `Ekubo's Special Spirit Command Guide`\n\
-  •  e.help - You won't get it.\n\
-  •  e.commands - Opens up this list.\n\
-  •  e.乒 - 乓\n\
-  •  乒 - 乓\n\
-  •  e.ping - Pong!\n\
-  •  ping - Pong!\n\
-  •  e.ding - Stop opening the door to the Spirits & Such Consultation office if you aren't giving us business.\n\
-  •  yummy yummy - Tasty.\n\
-  •  yare yare - Good Grief.\n\
-  •  telo telo - Tasty.\n\
-    `Insulting Ekubo`\n\
-    ⋗  e. - Stop wasting time.\n\
-    ⋗  e.zawarudo - This isn't JoJo part 3.\n\
-    ⋗  r!play muffin - We don't need to hear it again.\n\
-    ⋗  e.possession - You are beneath him.\n\
-    ⋗  e.turn - How dare you try to trick him.\n\
-    ⋗  e.tree - Bring up a dark chapter of the past.\n\
-    ⋗  e.lol - Bring up a dark chapter of the past.\n\
-    ⋗  Secret command - You won't find it.\
-    ")
+
   }
   if(msg.content.slice(0,4) === 'e.乒' && msg.author.id != '697823658680385557'){
     msg.channel.send("乓");
@@ -194,17 +180,7 @@ if(msg.mentions.members.first()){
     msg.channel.send("That's the wrong anime, buckaroo!");
   }
   if(msg.content.slice(0,11) === '** **' && msg.author.id != '697823658680385557'){
-    msg.delete();
-    msg.channel.send("..v 3783 -y");
-  }
-  if(msg.content.split('ehi') != msg.content && msg.author.id === '643515430287310868'){
-    msg.delete();
-  }
-  if(msg.content.split('ehi') != msg.content && msg.author.id === '697569067241832652'){
-    msg.delete();
-  }
-  if(msg.content.split('ehi') != msg.content && msg.author.id === '705217430556901428'){
-    msg.delete();
+    const hubbabubbachewinggum = 1
   }
   if(msg.content.slice(0,3) === 'e.' && msg.author.id != '697823658680385557'){
     msg.channel.send("C'mon, hurry it up, buddy! I ain't got all day! A spirit as highly esteemed as myself has places to be, y'know?!")
