@@ -26,7 +26,7 @@ client.on('ready', () => {
  client.user.setActivity("with reality like a toy.", {type: "PLAYING"})
  const chanel = client.channels.cache.get('691793782466674721');
  const chanell = client.channels.cache.get('713048489633906768');
- chanel.send(`${client.user.tag} is online and ready to do some work, boss!`);
+ chanel.send(`\`${client.user.tag}\` is online and ready to do some work, boss!`);
 
 });
 
@@ -90,6 +90,12 @@ else {
     const chanel = client.channels.cache.get('691793782466674721');
     const chanell = client.channels.cache.get('713048489633906768');
     chanell.send("Mehi said '" + msg.content + "' in channel #" + msg.channel.id + ".")
+  }
+  if(msg.content === 'rip obama'){
+    const obama = new Discord.MessageEmbed()
+        .setColor('#278731')
+        .setImage('https://i.redd.it/66u46ummrnp21.jpg')
+    msg.channel.send(obama)
   }
   if(msg.content.slice(0,7) === 'e.help' && msg.author.id != '697823658680385557'){
     msg.channel.send("You need help? Too bad! You have to get through me first.");
