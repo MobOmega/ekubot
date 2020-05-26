@@ -23,7 +23,7 @@ var removeChars = function(str, disallowedCharacters){
 
 client.on('ready', () => {
  console.log(`${client.user.tag} is online and ready to do some work, boss!`);
- client.user.setActivity("and pirating anime.", {type: "WATCHING"})
+ client.user.setActivity("with reality like a toy.", {type: "PLAYING"})
  const chanel = client.channels.cache.get('691793782466674721');
  const chanell = client.channels.cache.get('713048489633906768');
  chanel.send(`${client.user.tag} is online and ready to do some work, boss!`);
