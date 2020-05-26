@@ -26,11 +26,11 @@ client.on('ready', () => {
  client.user.setActivity("and pirating anime.", {type: "WATCHING"})
  const chanel = client.channels.cache.get('691793782466674721');
  const chanell = client.channels.cache.get('713048489633906768');
- chanel.send("");
+ chanel.send(`${client.user.tag} is online and ready to do some work, boss!`);
 
 });
 
-client.on('error', () => {
+client.on('error' || 'quit' || 'leave', () => {
   const chanel = client.channels.cache.get('691793782466674721');
   const chanell = client.channels.cache.get('713048489633906768');
   chanel.send('Bravo Six, Going Dark');
