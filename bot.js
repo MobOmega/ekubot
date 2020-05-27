@@ -37,7 +37,7 @@ client.on('error' || 'quit' || 'leave', () => {
 });
 
 client.on('message', async message => {
-  if(message.content.slice(0,12) === 'yummy yummy' && message.author.id != '697823658680385557' && message.author.id != '471499670871343125'){
+  if(message.content.slice(0,12) === 'yummy yummy' && message.author.id != '697823658680385557'){
     if(!(message.member.voice.channel)){
       message.reply('IN MY TEEEEEEEELOPHASE');
       return;
@@ -49,7 +49,7 @@ client.on('message', async message => {
       teelophase.pause();
       teelophase.resume();
 
-      teelophase.setVolume(2); // half the volume
+      teelophase.setVolume(0.1); // half the volume
 
       teelophase.on('finish', () => {
         console.log('Finished playing!');
