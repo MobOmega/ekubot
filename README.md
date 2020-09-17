@@ -7,6 +7,6 @@ Required dependencies:
 - An auth.json file with a token
 - The discord.js node module
 
-[ekubot's Website](https://drsmalls.github.io/ekubot/)
+[ekubot's Website](https://mobomega.github.io/ekubot/)
 
 Made by Mob
