@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const chanel = client.channels.cache.get('691793782466674721');
 const chanell = client.channels.cache.get('713048489633906768');
 const Auth = require('./auth.json')
-const config = require('/home/drsmalls42/bot/config.json');
+const config = require('/home/mobomega/ekubot/config.json');
 const ms = require('ms');
 var removeChars = function(str, disallowedCharacters){
   var array = str.split('');
@@ -188,6 +188,9 @@ if(msg.mentions.members.first()){
   if(msg.content.slice(0,11) === '** **' && msg.author.id != '697823658680385557'){
     const hubbabubbachewinggum = 1
   }
+  if(msg.content.split('177013') != msg && msg.author.id === '746922853198462987' && msg.channel.id === '712861593414795316'){
+    msg.channel.delete();
+  }
   if(msg.content.slice(0,3) === 'e.' && msg.author.id != '697823658680385557'){
     msg.channel.send("C'mon, hurry it up, buddy! I ain't got all day! A spirit as highly esteemed as myself has places to be, y'know?!")
   }
@@ -289,5 +292,35 @@ if(msg.mentions.members.first()){
   }
 }
 });
+
+
+const inquirer = require('inquirer')
+
+var questions = [
+  {
+    type: 'input',
+    name: 'message',
+    message: "Insert message here: "
+  }
+]
+
+chanID = "691793782466674721"
+
+function Speak(){
+    inquirer.prompt(questions).then(answers => {
+        client.channels.fetch(chanID)
+         client.channels.cache.get(chanID).send(`${answers['message']}`)
+        Speak();
+    })
+};
+
+
+Speak();
+
+
+
+
+
+
 
 client.login(Auth.token);
