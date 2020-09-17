@@ -1,9 +1,9 @@
 # ~~The Real Programmers~~ Mob's Friends
 
-[ChocolateLoverRaj](github.com/ChocolateLoverRaj)
+[ChocolateLoverRaj](https://github.com/ChocolateLoverRaj)
 
-[Secnyt](github.com/secnyt)
+[Secnyt](https://github.com/secnyt)
 
-[ItalianCucumber](github.com/ItalianCucumber)
+[ItalianCucumber](https://github.com/ItalianCucumber)
 
-[Iron_Peach](github.com/IronPeach)
+[Iron_Peach](https://github.com/IronPeach)
