@@ -1,6 +1,6 @@
 {
   "name": "ekubot",
-  "version": "1.2",
+  "version": "1.2.1",
   "description": "It's a bot for guidance, and it has dimples! ",
   "main": "bot.js",
   "author": "Mob",

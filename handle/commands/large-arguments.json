@@ -1,0 +1,14 @@
+{
+    "commandsArguments": [{
+            "name": "command", 
+            "optional": true, 
+            "desc": "The command to be helped with",
+            "ex": "e.commands commands"
+        },
+        {
+            "name": "arguments", 
+            "optional": true, 
+            "desc": "Explanation of the arguments of a command",
+            "ex": "e.commands commands arguments"
+        }]
+}
