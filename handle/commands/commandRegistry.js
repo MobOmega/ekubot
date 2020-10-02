@@ -11,6 +11,7 @@ const yummy = (msg, client) => { msg.channel.send('in my TEEEELOPHAAAAASE'); }
 const 乒 = (msg, client) => { msg.channel.send('乓!'); }
 const ping = (msg, client) => { msg.channel.send('Pong!'); }
 const babg = (msg, client) => { require('./audio playing/babg.js').handle(msg, client); }
+const ripobama = (msg, client) => { require('./miscellaneous/ripobama.js').handle(msg, client);}
 
 let CommandRegistry = [];
 
@@ -23,6 +24,6 @@ CommandRegistry.push( new Command('yummy', ['yummy yummy', 'yummy yummy in my'],
 CommandRegistry.push( new Command('乒', ['乒'], '乓', `\`e.乒\``, [], 乒, 'eku-experience', 'either') ); // prefix-or-not command
 CommandRegistry.push( new Command('ping', ['ping'], 'play a game of table tennis', `\`e.ping\``, [], ping, 'eku-experience', 'either') ); // same as above
 CommandRegistry.push( new Command('babg', ['babg'], 'this is what you are', '`babg`', [], babg, 'fun', 'either'));
-
+CommandRegistry.push( new Command('ripobama', ['rip obama', 'ripobama', 'f for obama'], 'press f to pay respects', '`rip obama`', [], ripobama, 'fun', false));
 
 module.exports = CommandRegistry;
