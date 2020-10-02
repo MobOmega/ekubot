@@ -10,3 +10,7 @@ Required dependencies:
 [ekubot's Website](https://mobomega.github.io/ekubot/)
 
 Made by Mob
+
+Thanks to/
+**Secnyt**/
+for the open source contributions.
