@@ -4,7 +4,7 @@ ekubot (stylized in lowercase) is a bot named and modeled after Ekubo, or Dimple
 
 Required dependencies:
 
-- An auth.json file with a token
+- An config.json file with a token and prefix value
 - The discord.js node module
 
 [ekubot's Website](https://mobomega.github.io/ekubot/)
