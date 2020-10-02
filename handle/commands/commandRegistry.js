@@ -18,9 +18,7 @@ let CommandRegistry = [];
 // due to this amazing strategy, commands automatically get their functionality and help pages built. talk about convenience! (and also overworking @Secnyt, but whatever)
 
 CommandRegistry.push( new Command('help', ['help'], 'You won\'t get it.', `\`${prefix}help\``, [], help, 'eku-experience', true) ); // command with no arguments
-CommandRegistry.push( new Command('commands', ['commands', 'functions'], 'Uhh, you just ran it.', `\`${prefix}commands\``, [ // command with arguments
-    
-], commands, 'eku-experience', true) );
+CommandRegistry.push( new Command('commands', ['commands', 'functions'], 'Uhh, you just ran it.', `\`${prefix}commands\``,  largeLists.commandsArguments, commands, 'eku-experience', true) );
 CommandRegistry.push( new Command('yummy', ['yummy yummy', 'yummy yummy in my'], 'CERTAIN STAGE OF MITOSIS', `\`yummy yummy\``, [], yummy, 'fun') ); // no prefix command
 CommandRegistry.push( new Command('乒', ['乒'], '乓', `\`e.乒\``, [], 乒, 'eku-experience', 'either') ); // prefix-or-not command
 CommandRegistry.push( new Command('ping', ['ping'], 'play a game of table tennis', `\`e.ping\``, [], ping, 'eku-experience', 'either') ); // same as above

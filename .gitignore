@@ -1,8 +1,5 @@
-# authorization
-config.json
-
 # node_modules
 node_modules
 
-# decrepit dedness
-commands-list-old.js
+# authorization
+config.json
