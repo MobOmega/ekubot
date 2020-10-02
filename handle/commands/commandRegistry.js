@@ -6,12 +6,12 @@ const largeLists = require('./large-arguments.json');
 // PLEASE KEEP EACH ONE OF THESE 1 LINE AND NOT TOO LONG, IF YOU NEED MORE LINES, OUTSOURCE TO A NEW FILE (like what was done for the commands + babg variable down there)
 
 const help = (msg, client) => { msg.channel.send(`You need help? Well, you'll have to get through me first. Unless you want the command list, then you should use \`${prefix}commands\`.`); };
-const commands = (msg, client) => { require('./help/commandsHandler').handle(msg, client); }
-const yummy = (msg, client) => { msg.channel.send('in my TEEEELOPHAAAAASE'); }
-const 乒 = (msg, client) => { msg.channel.send('乓!'); }
-const ping = (msg, client) => { msg.channel.send('Pong!'); }
-const babg = (msg, client) => { require('./audio playing/babg.js').handle(msg, client); }
-const ripobama = (msg, client) => { require('./miscellaneous/ripobama.js').handle(msg, client);}
+const commands = (msg, client) => { require('./help/commandsHandler').handle(msg, client); };
+const yummy = (msg, client) => { msg.channel.send('in my TEEEELOPHAAAAASE'); };
+const 乒 = (msg, client) => { msg.channel.send('乓!'); };
+const ping = (msg, client) => { msg.channel.send('Pong!'); };
+const babg = (msg, client) => { require('./audio playing/babg.js').handle(msg, client); };
+const ripobama = (msg, client) => { require('./miscellaneous/ripobama.js').handle(msg, client); };
 
 let CommandRegistry = [];
 
